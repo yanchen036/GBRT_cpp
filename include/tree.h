@@ -2,6 +2,7 @@
 #define _TREE_H_
 
 #include "node.h"
+#include "data.h"
 
 namespace gbrt_cy
 {
@@ -11,10 +12,10 @@ public:
     Tree();
     ~Tree();
     
-    void train();
+    void train(const Data* data);
 
 private:
-    Node* root;
+    Node* _root;
 };
 
 };
